@@ -36409,7 +36409,7 @@ var $async$ok=A.d(function(a4,a5){if(a4===1){o=a5
 s=p}while(true)switch(s){case 0:a1=null
 p=4
 s=7
-return A.k(a3.f9(0,"https://alcgithub.github.io/vendelo.github.io/FontManifest.json"),$async$ok)
+return A.k(a3.f9(0,"https://alcgithub.github.io/vendelo.github.io/assets/FontManifest.json"),$async$ok)
 case 7:a1=a5
 p=2
 s=6
@@ -43970,7 +43970,7 @@ var $async$ok=A.d(function(a8,a9){if(a8===1){o=a9
 s=p}while(true)switch(s){case 0:a5=null
 p=4
 s=7
-return A.k(a7.f9(0,"https://alcgithub.github.io/vendelo.github.io/FontManifest.json"),$async$ok)
+return A.k(a7.f9(0,"https://alcgithub.github.io/vendelo.github.io/assets/FontManifest.json"),$async$ok)
 case 7:a5=a9
 p=2
 s=6
