@@ -1,0 +1,109 @@
+<html>
+<!--<head>-->
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css"/>-->
+<!--  <link rel="stylesheet" href="//cdn.quilljs.com/1.3.6/quill.snow.css">-->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>-->
+<!--  <script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/xml.min.js"></script>-->
+<!--  <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>-->
+<!--  <script src="https://unpkg.com/quill-html-edit-button@2.2.7/dist/quill.htmlEditButton.min.js"></script>-->
+<!--</head>-->
+<style>
+  
+#quill.snow.css#
+
+#github.min.css#
+
+#quill-html-edit-button.css#
+
+
+</style>
+
+<script>
+#highlight.min.js#
+
+#xml.min.js#
+
+#quill.min.js#
+
+#quill.htmlEditButton.min.js#
+
+#dynamic_quill_tools.js#
+</script>
+
+<body>
+    <!-- Create the editor container -->
+    <div id="standalone-container">
+      <div id="toolbar-container">
+        <span class="ql-formats">
+          <select class="ql-font"></select>
+          <select class="ql-size"></select>
+        </span>
+        <span class="ql-formats">
+          <button class="ql-bold"></button>
+          <button class="ql-italic"></button>
+          <button class="ql-underline"></button>
+          <button class="ql-strike"></button>
+        </span>
+        <span class="ql-formats">
+          <select class="ql-color"></select>
+          <select class="ql-background"></select>
+        </span>
+        <span class="ql-formats">
+          <button class="ql-script" value="sub"></button>
+          <button class="ql-script" value="super"></button>
+        </span>
+        <span class="ql-formats">
+          <button class="ql-header" value="1"></button>
+          <button class="ql-header" value="2"></button>
+          <button class="ql-blockquote"></button>
+          <button class="ql-code-block"></button>
+        </span>
+        <span class="ql-formats">
+          <button class="ql-list" value="ordered"></button>
+          <button class="ql-list" value="bullet"></button>
+          <button class="ql-indent" value="-1"></button>
+          <button class="ql-indent" value="+1"></button>
+        </span>
+        <span class="ql-formats">
+          <button class="ql-direction" value="rtl"></button>
+          <select class="ql-align"></select>
+        </span>
+        <span class="ql-formats">
+          <button class="ql-link"></button>
+          <button class="ql-image"></button>
+          <button class="ql-video"></button>
+        </span>
+        <span class="ql-formats">
+          <button class="ql-show-html"></button>
+        </span>
+      </div>
+    </div>
+    <div id="editor"></div>
+    <!-- Initialize Quill editor -->
+    <script>
+      try {
+        Quill.register("modules/htmlEditButton", htmlEditButton);
+        var quill = new Quill('#editor', {
+          modules: {
+            toolbar: '#toolbar-container',
+            htmlEditButton: {
+              debug: false,
+              msg: "<html/>",//"Edit HTML here", 
+              okText: "#Save#",
+              cancelText: "",
+              buttonHTML: "&lt;html/&gt;", 
+              buttonTitle: "#htmlHint#",
+              syntax: true, 
+              prependSelector: 'div#myelement',
+              editorModules: {} // The default mod
+            }
+          },
+          theme: 'snow',
+          placeholder: '#placeholder#',
+        });
+      } catch (ex) {
+        alert(ex);
+      }
+    </script>
+  </body>
+</html>
