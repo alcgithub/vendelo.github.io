@@ -35039,7 +35039,7 @@ e=o
 h=A.C(e)
 if(t._p.b(h)){j=h
 i=A.b2P(j.target)
-if(t.Gf.b(i)){if(i.status===404&&b==="https://alcgithub.github.io/vendelo.github.io/assets/AssetManifest.json"){$.dW().$1("Asset manifest does not exist at `"+A.j(f)+"` \u2013 ignoring.")
+if(t.Gf.b(i)){if(i.status===404&&b==="AssetManifest.json"){$.dW().$1("Asset manifest does not exist at `"+A.j(f)+"` \u2013 ignoring.")
 q=A.i2(new Uint8Array(A.mb(B.aa.gil().da("{}"))).buffer,0,null)
 s=1
 break}h=i.status
@@ -67941,7 +67941,7 @@ return s==null?r:"packages/"+s+"/"+r},
 GJ(a){var s,r={},q=a.a
 if(q==null)q=$.vI()
 r.a=r.b=null
-q.aRo("https://alcgithub.github.io/vendelo.github.io/assets/AssetManifest.json",A.bEb(),t.wd).bX(0,new A.aiS(r,this,a,q),t.H).jq(new A.aiT(r))
+q.aRo("AssetManifest.json",A.bEb(),t.wd).bX(0,new A.aiS(r,this,a,q),t.H).jq(new A.aiT(r))
 s=r.a
 if(s!=null)return s
 s=new A.aa($.ac,t.Lv)
@@ -94625,7 +94625,7 @@ Dn(){var s=0,r=A.i(t.wd),q,p=2,o,n=[],m,l,k,j,i
 var $async$Dn=A.d(function(a,b){if(a===1){o=b
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.k($.vI().o9("https://alcgithub.github.io/vendelo.github.io/assets/AssetManifest.json",!0),$async$Dn)
+return A.k($.vI().o9("AssetManifest.json",!0),$async$Dn)
 case 7:m=b
 k=A.bsR(m)
 q=k
@@ -94638,7 +94638,7 @@ case 4:p=3
 i=o
 l=A.C(i)
 A.f3("Error loading AssetManifest.json, e: "+A.j(l))
-$.vI().Fm("https://alcgithub.github.io/vendelo.github.io/assets/AssetManifest.json")
+$.vI().Fm("AssetManifest.json")
 s=6
 break
 case 3:s=2
