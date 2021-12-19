@@ -118567,7 +118567,7 @@ s=h==null?l:h.a
 if(s==null)s=""
 r="http://alc.dynathome.net:7071/api/graphql/"+g+"/"+s
 h=t.N
-q=A.af(["Access-Control-Allow-Origin","*"],h,h)
+q=A.af(["Access-Control-Allow-Origin","*","Access-Control-Allow-Credentials","true","Access-Control-Allow-Headers","Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,locale","Access-Control-Allow-Methods","*"],h,h)
 q=new A.ZJ(A.i9(r,0,l),q,!1)
 q.r=new A.Au(A.b1(t.Gf))
 j=A.a([j,q],t.hV)
