@@ -1,6 +1,6 @@
 {
-    "name": "admin",
-    "short_name": "admin",
+    "name": "vendelo",
+    "short_name": "vendelo",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

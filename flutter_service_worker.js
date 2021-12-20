@@ -818,10 +818,10 @@ const RESOURCES = {
 "favicon.png": "ecfabd5f9cb33eb94eec4178e839793b",
 "icons/Icon-192.png": "b0262f81632fc6bb219b585b06ff4046",
 "icons/Icon-512.png": "c29e653b3e0fa8dd4bd3912834878733",
-"index.html": "366e2c18cdaac8ea3875531b8d1e379b",
-"/": "366e2c18cdaac8ea3875531b8d1e379b",
-"main.dart.js": "cf52183a522f43795750be63e1d141d5",
-"manifest.json": "df8ee12e5d40a884cc23acd0588bda1c",
+"index.html": "3168eb93bdd577f9b79dcd4b0e07d614",
+"/": "3168eb93bdd577f9b79dcd4b0e07d614",
+"main.dart.js": "318957d028dbb27ebf78f6ed6fb5967c",
+"manifest.json": "b31187c0a590b23b2a136f71358b089d",
 "version.json": "fa5db0550d76b1f249dc1bbb58b0cbd8"
 };
 
