@@ -108135,7 +108135,7 @@ case 7:l=A.vv(B.hq,"https://viacep.com.br/ws/"+A.j(a8)+"/json/",B.aa,!1)
 k=A.i9(l,0,null)
 e=t.N
 s=9
-return A.k(A.blo(k,A.af(["Accept","application/json"],e,e)).Rm(0,A.cN(0,0,0,0,5)),$async$yR)
+return A.k(A.blo(k,A.af(["Accept","application/json","Access-Control-Allow-Headers","Access-Control-Allow-Origin","Access-Control-Allow-Origin","*","Access-Control-Allow-Methods","*"],e,e)).Rm(0,A.cN(0,0,0,0,5)),$async$yR)
 case 9:j=b0
 s=j.b===200?10:11
 break
@@ -118560,24 +118560,24 @@ return A.b7D(s)},
 $S:1118}
 A.C2.prototype={
 aw_(){return new A.Ty(A.bsS("Authorization",new A.aub()))},
-S2(a){var s,r,q,p,o,n,m,l=null,k=a==null?A.bex(l,B.ab6,l):a,j=this.aw_(),i=$.W().K(0,t.E),h=i.gl(),g=A.bgd(h.gj(h).x)
-h=i.gl()
-h=h.gj(h).f
-s=h==null?l:h.a
+S2(a){var s,r,q,p,o,n,m,l=null,k="Access-Control-Allow-Origin",j=a==null?A.bex(l,B.ab6,l):a,i=this.aw_(),h=$.W().K(0,t.E),g=h.gl(),f=A.bgd(g.gj(g).x)
+g=h.gl()
+g=g.gj(g).f
+s=g==null?l:g.a
 if(s==null)s=""
-r="http://alc.dynathome.net:7071/api/graphql/"+g+"/"+s
-h=t.N
-q=A.af(["Access-Control-Allow-Origin","*","Access-Control-Allow-Credentials","true","Access-Control-Allow-Headers","Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,locale","Access-Control-Allow-Methods","*"],h,h)
+r="http://alc.dynathome.net:7071/api/graphql/"+f+"/"+s
+g=t.N
+q=A.af(["Accept","application/json","Access-Control-Allow-Headers",k,k,"*","Access-Control-Allow-Methods","*"],g,g)
 q=new A.ZJ(A.i9(r,0,l),q,!1)
 q.r=new A.Au(A.b1(t.Gf))
-j=A.a([j,q],t.hV)
+i=A.a([i,q],t.hV)
 q=$.bmQ().rG(l)
 p=$.bmN()
 o=p.rG(l)
 n=$.bmO().rG(l)
 p=p.rG(l)
 m=$.bmP().rG(l)
-return new A.aua(new A.Xt(q,o,n,p,m),k,new A.aBM(new A.aaG(j),k,!0,A.F(h,t.lg)))},
+return new A.aua(new A.Xt(q,o,n,p,m),j,new A.aBM(new A.aaG(i),j,!0,A.F(g,t.lg)))},
 acf(){return this.S2(null)}}
 A.aub.prototype={
 $0(){var s=0,r=A.i(t.N),q,p
