@@ -42,15 +42,13 @@
   <script>
     if ('serviceWorker' in navigator) {
       
-      window.addEventListener("load", function () {
-        navigator
+	navigator
           .serviceWorker
           .register('firebase-messaging-sw.js')
           .then(function(registration) {
-		        console.log("Service Worker Registered!!!");
-	          messaging.useServiceWorker(registration);  
+		console.log("Service Worker Registered!!!");
+	        messaging.useServiceWorker(registration);  
           }); 
-      });
 
       window.addEventListener('flutter-first-frame', function () {
         navigator.serviceWorker.register('flutter_service_worker.js?v=547281391');
