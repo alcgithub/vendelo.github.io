@@ -41,17 +41,12 @@
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
     if ('serviceWorker' in navigator) {
-      
-	navigator
-          .serviceWorker
-          .register('firebase-messaging-sw.js')
-          .then(function(registration) {
-		console.log("Service Worker Registered!!!");
-	        messaging.useServiceWorker(registration);  
-          }); 
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register('firebase-messaging-sw.js');
+      });
 
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=547281391');
+        navigator.serviceWorker.register('flutter_service_worker.js');
       });
     }
   </script>
